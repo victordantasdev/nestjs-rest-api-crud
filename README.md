@@ -32,6 +32,32 @@
 $ npm install
 ```
 
+## Run database and migrations
+
+```bash
+# postgres on docker
+$ docker compose up dev-db -d
+
+# create migrations
+$ npx prisma migrate dev
+
+# create types from schema
+$ npx prisma generate
+
+# run prisma studio
+$ npx prisma studio
+```
+
+## Simplified
+
+```bash
+# run all necessary commands to run database and migrations 
+$ npm run prepare
+
+# Run prisma studio
+$ npm run studio
+```
+
 ## Running the app
 
 ```bash
